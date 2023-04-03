@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+        <script src="form-validation.js"></script>
+        <link href="form-validation.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              user-select: none;
+            }
+        
+            @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+            }
+        
+            .b-example-divider {
+              height: 3rem;
+              background-color: rgba(0, 0, 0, .1);
+              border: solid rgba(0, 0, 0, .15);
+              border-width: 1px 0;
+              box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            }
+        
+            .b-example-vr {
+              flex-shrink: 0;
+              width: 1.5rem;
+              height: 100vh;
+            }
+        
+            .bi {
+              vertical-align: -.125em;
+              fill: currentColor;
+            }
+        
+            .nav-scroller {
+              position: relative;
+              z-index: 2;
+              height: 2.75rem;
+              overflow-y: hidden;
+            }
+        
+            .nav-scroller .nav {
+              display: flex;
+              flex-wrap: nowrap;
+              padding-bottom: 1rem;
+              margin-top: -1px;
+              overflow-x: auto;
+              text-align: center;
+              white-space: nowrap;
+              -webkit-overflow-scrolling: touch;
+            }
+          </style>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="kiit_01.png" type="image/x-icon">
+    <title>KHANDESH IIT Registration</title>
+  </head>
+  
+  
+  
+      
+  
+      
+      
+    <body class="bg-light">
+      
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="kiit_01.png" alt="" width="250px" height="250px" id="logo"><br>
+        <h1 id="logo">Registration form</h1>
+        <p class="lead" id="logo">Welcome to Khandesh IIT the School of
+            Information Technology. <br> Register with Khandesh IIT and be the part of our Developer Family. 
+        </p>
+      </div>
+  
+      
+  
+          
+        
+        <div class="col-md-7 col-lg-8 form-control bg-light" id="form">
+          <h4 class="mb-3">Personal Information </h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label for="firstName" class="form-label">First name <span class="text-muted">*</span></label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="firstName" class="form-label" >Middle name <span class="text-muted">*</span></label>
+                <input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="lastName" class="form-label">Last name <span class="text-muted">*</span></label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="Gender" class="form-label">Gender <span class="text-muted">*</span></label>
+                <div class="input-group has-validation col-md-12">
+                  <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Male
+                    </label>
+                  </div>
+                  
+                  <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Female
+                    </label>
+                  </div>
+                <div class="invalid-feedback">
+                    Your Gender is required.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="address" class="form-label">Address <span class="text-muted">*</span></label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Country <span class="text-muted">*</span></label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>India</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">State <span class="text-muted">*</span></label>
+                <select class="form-select" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>Maharashtra</option>
+                  <option value="">Gujarat</option>
+                  <option value="">Madhya-Pradesh</option>
+                  <option value="">Delhi</option>
+                  <option value="">Karnataka</option>
+                  <option value="">Goa</option>
+                  <option value="">Uttar-Pradesh</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="City" class="form-label">City <span class="text-muted">*</span></label>
+                <input type="text" class="form-control" id="city" placeholder="City" required="">
+                <div class="invalid-feedback">
+                  City required.
+                </div>
+              </div>
+
+              <div class="col-6">
+                <label for="m-number" class="form-label">Mobile Number <span class="text-muted">*</span></label>
+                <input type="tel" class="form-control" id="m-number" placeholder="Mobile Number" required>
+              </div>
+            </div>
+  
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3">Courses</h4>
+  
+            <div class="my-3 ">
+              <div class="form-check">
+                <select class="form-select form-select-md mb-3 " aria-label=".form-select-sm example" required>
+                  <option selected>Select Course</option>
+                  <option value="1">C Programming</option>
+                  <option value="2">C++ Programming</option>
+                  <option value="3">Java Programming</option>
+                  <option value="4">Python & django</option>
+                  <option value="5">Web Design</option>
+                  <option value="6">Android Development</option>
+                  <option value="7">Full Stack Development</option>
+                  <option value="8">Software Development & Testing</option>
+                  <option value="9">Artificial Intelligence & Machine Learning</option>
+                  <option value="10">Data Science</option>
+                </select>
+              </div>
+              
+            </div>
+  
+           <div class="col-6"><button class="w-50 btn btn-primary btn-md" type="submit">Register</button></div>
+  
+            
+          </form>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">© 2006–2022 KHANDESH IIT Created by Kartik Patil</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  
+      
+    
+  
+  
+
+</body></html>
+    
+    
+  </body>
+</html>
